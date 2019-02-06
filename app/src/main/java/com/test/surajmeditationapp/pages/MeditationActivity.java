@@ -249,7 +249,6 @@ public class MeditationActivity extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<DocumentSnapshot> task) {
                 if (task.isSuccessful()) {
-
                     DocumentSnapshot document = task.getResult();
                     assert document != null;
                     if (document.exists()) {
