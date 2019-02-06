@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "763611277232",
+    "firebase_url": "https://meditation-app-753f7.firebaseio.com",
+    "project_id": "meditation-app-753f7",
+    "storage_bucket": "meditation-app-753f7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:763611277232:android:9576279c8d1db018",
+        "android_client_info": {
+          "package_name": "com.test.surajmeditationapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "763611277232-44u4avibda3t6g17gnt5eprgrscquvlf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPSTeCTfRdidUUvwxbhJqYwZwpYFNZg3I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

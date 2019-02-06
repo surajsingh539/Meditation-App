@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#212121</color>
+    <color name="colorPrimaryDark">#212121</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="login_text">#05AD10</color>
+    <color name="grey">#7C797A</color>
+    <color name="yellow">#D4AC0D</color>
+    <color name="blue">#3498DB</color>
+    <color name="deep_yellow">#F5B041</color>
+    <color name="pink">#ff6a80</color>
+    <color name="light_blue">#73C6B6</color>
+    <color name="green">#7ACB71</color>
+    <color name="gray">#7F8C8D</color>
+    <color name="dark_blue">#1B4F72</color>
+    <color name="red">#FD5241</color>
+    <color name="light_gray">#D7DBDD</color>
+    <color name="toolbarTransparent">#00FFFFFF</color>
+</resources>

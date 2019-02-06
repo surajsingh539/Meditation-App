@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    tools:context=".pages.MeditationActivity">
+
+    <ImageView
+        android:id="@+id/play_img"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:background="@color/toolbarTransparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/music_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="---"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/colorAccent"/>
+
+        <TextView
+            android:id="@+id/music_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="---"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/colorAccent"/>
+
+    </LinearLayout>
+
+    <com.andremion.music.MusicCoverView
+        android:id="@+id/cover"
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop"
+        android:transitionName="@string/transition_name_cover"
+        app:layout_heightPercent="35%"
+        app:shape="circle" />
+
+    <com.test.surajmeditationapp.view.ProgressView
+        android:id="@+id/progress"
+        android:layout_centerInParent="true"
+        android:transitionName="@string/transition_name_progress"
+        app:layout_aspectRatio="100%"
+        app:layout_heightPercent="40%"/>
+
+    <ImageButton android:id="@+id/btnPlay"
+        style="@android:style/MediaButton.Play"
+        android:layout_centerInParent="true" />
+
+    <Space
+        android:id="@+id/timers_anchor"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cover"
+        android:layout_centerHorizontal="true"
+        app:layout_widthPercent="25%"/>
+
+    <TextView
+        android:id="@+id/start_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:layout_alignTop="@id/timers_anchor"
+        android:layout_toStartOf="@id/timers_anchor"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        tools:text="02:30"/>
+
+    <TextView
+        android:id="@+id/end_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/timers_anchor"
+        android:layout_toEndOf="@id/timers_anchor"
+        android:textColor="@color/colorAccent"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        tools:text="04:30"/>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        style="@style/AVLoadingIndicatorView"
+        android:visibility="visible"
+        app:indicatorName="LineScalePartyIndicator"
+        app:indicatorColor="@color/colorAccent" />
+
+</android.support.percent.PercentRelativeLayout>
